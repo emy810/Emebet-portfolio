@@ -1,0 +1,62 @@
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --card-bg: #f2f2f2;
+  --border: #dcdcdc;
+  --accent: #0077ff;
+  --nav-bg: rgba(255, 255, 255, 0.7);
+  --footer-bg: #f3f6ff;
+  --footer-text: #333;
+  --footer-border: #d0d8f0;
+}
+
+[data-theme="dark"] {
+  --bg: #0f0f0f;
+  --text: #ffffff;
+  --card-bg: #1a1a1a;
+  --border: #2a2a2a;
+  --accent: #9ecbff;
+  --nav-bg: rgba(10, 10, 20, 0.7);
+  --footer-bg: #0d0d16;
+  --footer-text: #cfcfcf;
+  --footer-border: #2a2a2a;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  line-height: 1.5;
+}
+
+img,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+[data-theme="light"] .hero {
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 50%, #fad0c4 100%);
+}

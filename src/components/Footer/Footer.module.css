@@ -1,0 +1,22 @@
+.footer {
+  text-align: center;
+  padding: 25px;
+  margin-top: 40px;
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  border-top: 3px solid;
+  border-image: linear-gradient(135deg, #6a11cb, #2575fc, #00d4ff) 1;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+[data-theme="dark"] .footer {
+  --footer-bg: #0d0d16;
+  --footer-text: #cfcfcf;
+}
+
+[data-theme="light"] .footer {
+  --footer-bg: #f3f6ff;
+  --footer-text: #333;
+}

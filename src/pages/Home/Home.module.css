@@ -1,0 +1,90 @@
+.hero {
+  padding: 10px 10px 100px;
+  text-align: center;
+  min-height: 100vh;
+
+  background: linear-gradient(135deg, #783fb5 0%, #00d4ff 100%, #2575fc 20%);
+
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  transition: background 0.3s ease;
+}
+
+[data-theme="dark"] .hero {
+  background: linear-gradient(135deg, #0d0d16 0%, #151a33 40%, #1f2a4a 100%);
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #e8e8e8;
+  margin-bottom: 40px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.primary {
+  padding: 12px 24px;
+  background: white;
+  color: #000;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
+
+.secondary {
+  padding: 12px 24px;
+  border: 2px solid white;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
+
+.primary:hover,
+.secondary:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 40px 20px 40px;
+    min-height: auto;
+  }
+
+  .title {
+    font-size: clamp(2.2rem, 6vw, 4rem);
+    line-height: 1.2;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .buttons a {
+    width: 100%;
+    text-align: center;
+  }
+}
