@@ -141,7 +141,7 @@ export default function Projects() {
 
             <video className={styles.video} controls preload="metadata">
               <source
-                src="PASTE_SPACEGALACTICA_VIDEO_URL_HERE"
+                src="https://res.cloudinary.com/dtztti3h0/video/upload/v1780697221/space_b95uqf.mp4"
                 type="video/mp4"
               />
             </video>
