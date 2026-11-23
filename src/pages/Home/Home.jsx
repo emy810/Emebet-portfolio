@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./Home.module.css";
 
 export default function Home() {
@@ -7,12 +8,12 @@ export default function Home() {
       <p className={styles.subtitle}>Junior Frontend Developer</p>
 
       <div className={styles.buttons}>
-        <a href="/projects" className={styles.primary}>
+        <Link to="/projects" className={styles.primary}>
           View My Work
-        </a>
-        <a href="/contact" className={styles.secondary}>
+        </Link>
+        <Link to="/contact" className={styles.secondary}>
           Contact Me
-        </a>
+        </Link>
       </div>
     </section>
   );
